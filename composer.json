@@ -1,0 +1,27 @@
+{
+    "name": "panix/wgt-select2",
+    "description": "Select2",
+    "homepage": "https://github.com/andrtechno/wgt-select2/",
+    "type": "pixelion-component",
+    "license": "MIT",
+    "support": {
+        "issues": "https://github.com/andrtechno/wgt-select2/issues",
+        "source": "https://github.com/andrtechno/wgt-select2"
+    },
+    "authors": [
+        {
+            "name": "PIXELION CMS",
+            "email": "dev@pixelion.com.ua",
+            "homepage": "https://pixelion.com.ua"
+        }
+    ],
+    "require": {
+        "bower-asset/select2": "^4.0.*",
+        "git init": "^1.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "panix\\wgt\\select2\\": ""
+        }
+    }
+}
