@@ -21,7 +21,7 @@
     },
     "autoload": {
         "psr-4": {
-            "panix\\wgt\\select2\\": ""
+            "panix\\ext\\select2\\": ""
         }
     }
 }
