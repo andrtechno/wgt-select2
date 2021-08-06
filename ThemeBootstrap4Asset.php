@@ -7,7 +7,7 @@
 
 namespace panix\ext\select2;
 
-use panix\engine\web\AssetBundle;
+use yii\web\AssetBundle;
 use yii\helpers\ArrayHelper;
 
 /**
@@ -16,6 +16,7 @@ use yii\helpers\ArrayHelper;
  */
 class ThemeBootstrap4Asset extends AssetBundle
 {
+
     public $sourcePath = '@vendor/ttskch/select2-bootstrap4-theme/dist';
 
     public $css = [
