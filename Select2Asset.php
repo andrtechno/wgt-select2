@@ -16,31 +16,25 @@ use yii\helpers\ArrayHelper;
  */
 class Select2Asset extends AssetBundle
 {
-    public $sourcePath = '@bower/snapappointments/bootstrap-select/dist';
+    public $sourcePath = '@vendor/select2/select2/dist';
 
     public $css = [
-        'css/bootstrap-select.min.css'
+        'css/select2.min.css'
     ];
 
     public $js = [
-        'js/bootstrap-select.min.js'
+        'js/select2.min.js'
     ];
 
     public $depends = [
-        //'yii\web\JqueryAsset',
-        //'app\web\themes\autima\ThemeAsset',
+        'yii\web\JqueryAsset',
         //'yii\bootstrap4\BootstrapAsset',
-        'yii\bootstrap4\BootstrapPluginAsset',
+      //  'yii\bootstrap4\BootstrapPluginAsset',
     ];
 
     public function init()
     {
-        if(\Yii::$app->has('languageManager')){
-            $lang = str_replace('-', '_', \Yii::$app->languageManager->active->locale);
-        }else{
-            $lang = 'ru_RU';
-        }
-        $this->js = ArrayHelper::merge($this->js, ["js/i18n/defaults-{$lang}.min.js"]);
+
         parent::init();
     }
 }
