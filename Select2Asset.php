@@ -7,8 +7,9 @@
 
 namespace panix\ext\select2;
 
-use panix\engine\web\AssetBundle;
+use yii\web\AssetBundle;
 use yii\helpers\ArrayHelper;
+use yii\web\View;
 
 /**
  * Class Select2Asset
@@ -16,6 +17,11 @@ use yii\helpers\ArrayHelper;
  */
 class Select2Asset extends AssetBundle
 {
+
+    public $jsOptions = [
+        'position' => View::POS_END
+    ];
+
     public $sourcePath = '@vendor/select2/select2/dist';
 
     public $css = [
